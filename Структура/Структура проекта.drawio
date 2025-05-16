@@ -1,0 +1,76 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.3.3 Safari/537.36" version="26.1.1">
+  <diagram name="Страница — 1" id="CtDqae_aFECmHmUgnCrK">
+    <mxGraphModel dx="591" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="simple">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MeoAMOA6U9oR55FciqPd-1" value="SalesPoint" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="140" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-2" value="id&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;addres&lt;br&gt;&lt;br&gt;manager&lt;br&gt;&lt;br&gt;cells&lt;br&gt;&lt;br&gt;isActive&lt;br&gt;&lt;br&gt;budget&lt;br&gt;&lt;br&gt;revenue&lt;br&gt;&lt;br&gt;warehouses&lt;br&gt;&lt;br&gt;workers&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-1" vertex="1">
+          <mxGeometry y="30" width="140" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-5" value="Warehouse" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="40" width="140" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-6" value="id&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;address&lt;br&gt;&lt;br&gt;manager&lt;br&gt;&lt;br&gt;cells&lt;br&gt;&lt;br&gt;isActive&lt;br&gt;&lt;br&gt;budget&lt;br&gt;&lt;br&gt;workers&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-5" vertex="1">
+          <mxGeometry y="30" width="140" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-9" value="StorageCell" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="350" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-10" value="cellId&lt;br&gt;&lt;br&gt;quantity&lt;br&gt;&lt;br&gt;product&lt;br&gt;&lt;br&gt;isInWarehouse" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-9" vertex="1">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-13" value="Product" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="300" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-14" value="id&lt;br&gt;&lt;br&gt;name&lt;br&gt;&lt;br&gt;price&lt;br&gt;&lt;br&gt;category" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-13" vertex="1">
+          <mxGeometry y="30" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-15" value="Employee" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="525" width="140" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-16" value="id&lt;br&gt;&lt;br&gt;workplaceId&lt;br&gt;&lt;br&gt;name&lt;br&gt;&lt;br&gt;position&lt;br&gt;&lt;br&gt;salary" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-15" vertex="1">
+          <mxGeometry y="30" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-19" value="Customer" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="230" y="480" width="140" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-20" value="id&lt;br&gt;&lt;br&gt;name&lt;br&gt;&lt;br&gt;contactInfo&lt;br&gt;&lt;br&gt;balance&lt;br&gt;&lt;br&gt;purchaseHistory" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-19" vertex="1">
+          <mxGeometry y="30" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-21" value="Website" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="720" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-22" value="customers&lt;br&gt;&lt;br&gt;salesPoints&lt;br&gt;&lt;br&gt;scanner" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-21" vertex="1">
+          <mxGeometry y="30" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-23" value="CMS" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="40" width="140" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-24" value="warehouses&lt;br&gt;&lt;br&gt;salesPoints&lt;br&gt;&lt;br&gt;products&lt;br&gt;&lt;br&gt;employees&lt;br&gt;&lt;br&gt;customers&lt;br&gt;&lt;br&gt;scanner&lt;br&gt;&lt;br&gt;website" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-23" vertex="1">
+          <mxGeometry y="30" width="140" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-27" value="DataReadingManager" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="420" width="140" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-28" value="readAllData&lt;br&gt;&lt;br&gt;readWarehouses&lt;br&gt;&lt;br&gt;readSalesPoints&lt;br&gt;&lt;br&gt;readProducts&lt;br&gt;&lt;br&gt;readEmployees&lt;br&gt;&lt;br&gt;readCustomers&lt;br&gt;&lt;br&gt;readPurchaseHistory&lt;br&gt;&lt;br&gt;readProductInformation" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-27" vertex="1">
+          <mxGeometry y="30" width="140" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-29" value="DataRecordingManager" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="414" y="310" width="136" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="MeoAMOA6U9oR55FciqPd-30" value="writeAllData" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="MeoAMOA6U9oR55FciqPd-29" vertex="1">
+          <mxGeometry y="30" width="136" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SdPwd8iqOodcdwf8k19g-1" value="Workplace" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="40" width="140" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="SdPwd8iqOodcdwf8k19g-2" value="getId&lt;br&gt;&lt;br&gt;getAddress&lt;br&gt;&lt;br&gt;getCells&lt;br&gt;&lt;br&gt;getBudget&lt;br&gt;&lt;br&gt;getWorkers&lt;br&gt;&lt;br&gt;getManager&lt;br&gt;&lt;br&gt;setManager&lt;br&gt;&lt;br&gt;addWorker&lt;br&gt;&lt;br&gt;removeWorker" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="SdPwd8iqOodcdwf8k19g-1">
+          <mxGeometry y="30" width="140" height="250" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
