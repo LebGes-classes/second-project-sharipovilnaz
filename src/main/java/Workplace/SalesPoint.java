@@ -29,6 +29,7 @@ public class SalesPoint implements Serializable, Workplace {
         this.workers = new ArrayList<>();
         this.isActive = true;
         this.revenue = 0;
+        this.workers.add(manager);
     }
 
     @Override
@@ -279,7 +280,7 @@ public class SalesPoint implements Serializable, Workplace {
 
         System.out.println("Все товары '" + product.getName() + "' успешно проданы.");
     }
-    
+
     // Продать товар по количеству
     public void sellProductByQuantity(Product product, int requestedQuantity) {
         if (product == null || requestedQuantity <= 0) {

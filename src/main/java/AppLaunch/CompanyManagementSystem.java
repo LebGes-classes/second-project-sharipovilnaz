@@ -379,25 +379,35 @@ public class CompanyManagementSystem {
     }
     // купить товар
     private static void purchaseProductForWarehouse(Warehouse warehouse) {
-        System.out.println("Доступные товары:");
         listProducts();
+
         System.out.print("Введите ID товара: ");
         int productId = scanner.nextInt();
         scanner.nextLine();
+
         Product product = findProductById(productId);
         if (product == null) {
-            System.out.println("Товар с таким ID не найден.");
+            System.out.println("Товар не найден.");
             pause();
             return;
         }
+
         System.out.print("Введите количество для закупки: ");
         int quantity = scanner.nextInt();
         scanner.nextLine();
+
+        warehouse.printInfoAboutProductsAtWarehouse();
+
+        System.out.print("Введите ID ячейки для добавления (или 0 для создания новой): ");
+        int cellId = scanner.nextInt();
+        scanner.nextLine();
+
         try {
-            warehouse.purchaseProduct(product, quantity);
+            warehouse.purchaseProduct(product, quantity, cellId);
         } catch (Exception e) {
-            System.out.println("Ошибка: " + e.getMessage());
+            System.out.println("Ошибка при закупке: " + e.getMessage());
         }
+
         pause();
     }
     // закинуть деньги

@@ -132,7 +132,7 @@ public class Warehouse implements Serializable, Workplace {
         return quantitySum;
     }
     // Закупить товар
-    public void purchaseProduct(Product product, int quantity) {
+    public void purchaseProduct(Product product, int quantity, int targetCellId) {
         if (product == null) {
             throw new NullPointerException("Товар не может быть null");
         }
@@ -145,13 +145,30 @@ public class Warehouse implements Serializable, Workplace {
             throw new IllegalStateException("Недостаточно средств на складе для закупки. Требуется: " + totalCost + ", доступно: " + budget);
         }
 
-        // Добавляем товар на склад
-        addProduct(product, generateNewCellId(), quantity);
+        boolean added = false;
+        if (targetCellId != 0) {
+            for (StorageCell cell : cells) {
+                if (cell.getCellId() == targetCellId && cell.getProduct().equals(product)) {
+                    cell.setQuantity(cell.getQuantity() + quantity);
+                    System.out.println("Количество обновлено в ячейке ID: " + targetCellId);
+                    added = true;
+                    break;
+                }
+            }
 
-        // Уменьшаем бюджет склада
+            if (!added && targetCellId != 0) {
+                System.out.println("Ячейка с указанным ID не найдена или товар не совпадает.");
+                return;
+            }
+        }
+
+        if (!added) {
+            addProduct(product, generateNewCellId(), quantity);
+            System.out.println("Создана новая ячейка с ID: " + (generateNewCellId() - 1));
+        }
+
         budget -= totalCost;
-
-        System.out.println("Закуплено " + quantity + " единиц товара " + product.getName() +  "Общий расход: " + totalCost);
+        System.out.println("Закуплено " + quantity + " ед. товара \"" + product.getName() + "\"");
     }
     public int generateNewCellId() {
         return cells.size() + 1;
